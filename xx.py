@@ -43,3 +43,5 @@ class SavingsAccount(BankAccount):
     def accrue_interest(self):
         self.balance *= (1 + self.interest_rate)
         print(f"Interest accrued. New balance: ${self.balance}")
+
+
