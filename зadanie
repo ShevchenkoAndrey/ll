@@ -44,3 +44,4 @@ def factorial(n):
 
 number = int(input("Введіть число: "))
 print("Факторіал числа", number, ":", factorial(number))
+
