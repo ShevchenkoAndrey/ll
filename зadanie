@@ -1,0 +1,46 @@
+# Завдання 5
+def find_divisors(number):
+    divisors = []
+    for i in range(1, number + 1):
+        if number % i == 0:
+            divisors.append(i)
+    return divisors
+
+number = int(input("Введіть ціле число: "))
+print("Дільники числа", number, ":", find_divisors(number))
+
+# Завдання 6
+sum_of_numbers = sum(range(1, 101))
+print("Сума чисел від 1 до 100:", sum_of_numbers)
+
+# Завдання 7
+start = int(input("Введіть перше число: "))
+end = int(input("Введіть друге число: "))
+print("Числа від", start, "до", end, "включно:", list(range(start, end + 1)))
+
+# Завдання 8
+def is_palindrome(s):
+    return s == s[::-1]
+
+string = input("Введіть рядок: ")
+if is_palindrome(string):
+    print("Введений рядок є паліндромом.")
+else:
+    print("Введений рядок не є паліндромом.")
+
+# Завдання 9
+def average(numbers):
+    return sum(numbers) / len(numbers)
+
+numbers = [int(x) for x in input("Введіть числа через пробіл: ").split()]
+print("Середнє арифметичне чисел:", average(numbers))
+
+# Завдання 10
+def factorial(n):
+    if n == 0:
+        return 1
+    else:
+        return n * factorial(n - 1)
+
+number = int(input("Введіть число: "))
+print("Факторіал числа", number, ":", factorial(number))
